@@ -7,25 +7,25 @@ Whilst tech tests often have a fairly open specification to allow for implementa
 
 - Use git to track your development process
 
-- Make sure you have a .gitignore file. The one I have included in this repo will work for most JavaScript projects. Just pay attention though if you have node_modules nested in directories within your project for example.
+- Make sure you have a .gitignore file. The very thorough one I have included in this repo can be used, removing anything that doesn't apply.
 
-- Do not use `$ git add . -A` instead view your diff `git diff` or status `git status` adding files and directories one by one with care. This way you will not end up committing anything you do not want to. You should also view your `git diff` carefully to make sure you do not leave in any lines of code you do not want in the history, comments & console.log lines for example.
+- Do not use `$ git add .` instead view your diff `git diff` or status `git status` adding files and directories one by one with care. This way you will not end up committing anything you do not want to. You should also view your `git diff` carefully to make sure you do not leave in any lines of code you do not want in the history, comments & console.log lines for example.
 On this point you may find the following commands handy:
     - `git reset FILE_OR_DIR_NAME` un-stage a file or directory you have added to the staging area.
     - `git checkout FILE_OR_DIR_NAME` remove any changes to a file or directory git is already tracking
     - `git clean -f` remove any files or directories you have added but do not want to stage or commit
     
-- Provide a README which tells the end user how to run your project (see below)
+- Provide a README which tells the end user how to run your project
 
-- Always Test your code
+- Always test what can be tested
 
-- Make sure all your dependencies are saved in your `package.json` file
+- Make sure ALL your dependencies are saved in your `package.json` file
 
 - Do not rely on any global package installs that you have on your own computer. Install them locally in the project.
 
 - Structure files in a sensible way
 
-- Always Lint your code
+- Always Lint your code (include `eslint` the package in your project and a config file)
 
 - Complete the test in the time frame requested and submit in the format required
 
@@ -33,7 +33,7 @@ On this point you may find the following commands handy:
 
 ### Other things to consider:
 
-- **Read the instructions carefully.** Because tech tests leave implementation instructions vague, it can be hard to figure out what is being asked. Don't start coding until you fully understand the problem. 
+- **Read the instructions carefully.** Because tech tests leave implementation instructions vague, it can be hard to figure out what is being asked. Don't start coding until you fully understand the problem. Read all the instructions before beginning.
 
 - **Assume no prior knowledge** In your README.md, don't assume anything. Don't even assume they have Node installed - tell them what version they need and give them the command they need to use to install dependencies and run the project. Don't patronise by over-explaining, just tell them the instructions they need to run.
 
